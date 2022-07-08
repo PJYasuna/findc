@@ -14,7 +14,7 @@ double threshold = 0.8281;
 // threshold = 0.83;  
 // threshold = 0.5;
 
-string filename = "ca-HepPh.txt";
+string filename = "web-Stanford.txt";
 // string filename = "com-dblp.ungraph.txt";
 
 
@@ -90,7 +90,7 @@ double getquasi(int finalnode) {
             if (finalset.count(i2)) finaledges++;
         }
     }
-    finaledges = finaledges / 2;
+    finaledges = finaledges;
     double quasi = double(finaledges) / double(finalset.size() * (finalset.size()-1));
     return quasi;
 }
